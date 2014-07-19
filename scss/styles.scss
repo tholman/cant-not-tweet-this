@@ -8,3 +8,65 @@
 /*********************************************
  *
  *********************************************/
+
+* {
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+html, body {
+	min-height: 100%;
+	min-width: 100%;
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.background {
+	pointer-events: none;
+	height: 100%;
+	width: 100%;
+
+	span {
+		-webkit-transform: translate3d(-50%, -50%, 0px);
+		-moz-transform: translate3d(-50%, -50%, 0px);
+		-ms-transform: translate3d(-50%, -50%, 0px);
+		transform: translate3d(-50%, -50%, 0px);
+
+		-webkit-transition: opacity 500ms;
+		-moz-transition: opacity 500ms;
+		-ms-transition: opacity 500ms;
+		transition: opacity 500ms;
+
+		text-transform: uppercase;
+		font-family: helvetica;
+		line-height: 180px;
+		font-weight: 900;
+		font-size: 200px;
+		height: 200px;
+		position: fixed;
+		color: #f9f9f9;
+		left: 50%;
+		top: 50%;
+		opacity: 0;
+		
+		&.fade {
+			opacity: 1;
+		}
+	}
+}
+
+.the-button {
+	z-index: 2;
+	pointer-events: none;
+	position: fixed;
+
+	iframe {
+		-webkit-transform: translate3d(-20px, -12px, 0px);
+		-moz-transform: translate3d(-20px, -12px, 0px);
+		-ms-transform: translate3d(-20px, -12px, 0px);
+		transform: translate3d(-20px, -12px, 0px);
+	}
+}
