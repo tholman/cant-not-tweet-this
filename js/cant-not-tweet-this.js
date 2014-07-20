@@ -60,6 +60,7 @@ function App() {
     	theButton.style.transform = "translate3d(" + mouse.x + "px, " + mouse.y + 'px, 0px)';
     	
     	// Allow clicking of the button, when its not moving.
+    	// We don't allow clicking when its moving, so we can accurately track the mouse position.
     	clearTimeout( timeout );
     	timeout = setTimeout( allowClick, 100 );
     }

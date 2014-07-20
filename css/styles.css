@@ -39,7 +39,7 @@ html, body {
     font-size: 200px;
     height: 200px;
     position: fixed;
-    color: #eee;
+    color: rgba(0, 0, 0, 0.03);
     left: 50%;
     top: 50%;
     opacity: 0; }
